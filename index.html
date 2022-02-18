@@ -10,11 +10,12 @@
     <script src='main.js'></script>
     <!-- Estilo incorporado usando id como seletor -->
     <style type="text/css">
-        #bloco-3{
-            width:200px;
+        #bloco-3 {
+            width: 200px;
             height: 200px;
-            background-color:red;
+            background-color: red;
         }
+
         /* ids são referenciados com "#" antes do nome */
     </style>
 </head>
@@ -75,7 +76,7 @@
         <div class="bloco-1">
             <p>Estilo externo</p>
         </div>
-        <div name="bloco-2" style="background-color: blue; width: 200px;height: 200px;" >
+        <div name="bloco-2" style="background-color: blue; width: 200px;height: 200px;">
             <p>Estilo inline</p>
         </div>
         <!-- bloco 2 está sendo estilizado dentro de um elemento head em um elemento style especifica para estilos -->
@@ -86,14 +87,28 @@
     </section>
 
     <!-- BOX MODEL -->
-    <section >
+    <section>
+        <!-- Abaixo, segue um representativo da camada de box model... Na pratica, isso ficaria diferente -->
         <div class="box-margin">
+            <p>margem</p>
             <div class="box-border">
+                <p>borda</p>
                 <div class="box-padding">
+                    <p>padding</p>
                     <div class="box-content">
-                        aqui
+                        <p>conteudo</p>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div style="background-color: red; width: 25%; height: 300px; padding-top: 50px; margin: 50px;"> 
+            <!-- A div acima representa a margem já que não podemos colorir ela -->
+            <div style="background-color: blue; border: 50px solid yellow; margin: 0 50px; padding: 50px;">
+            <!-- A parte amarela representa a borda da div
+            Em azul, temos o que seria o padding do conteudo caso fosse possivel colori-lo -->
+                <p style="background-color: purple; height: 50px; margin: 0; padding: 0; color: white;"> conteudo </p>
+                <!-- Por ultimo, o conteudo de fato em roxo -->
             </div>
         </div>
     </section>

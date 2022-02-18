@@ -1,0 +1,35 @@
+.bloco-1 {
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+}
+/* classes devem ser referenciadas com o "." antes do nome */
+
+/* BOX MODEL */
+.box-margin {
+    width: 100px;
+    margin: 150px;
+    height: 100px;
+    background-color: red;
+}
+
+.box-border {
+    width: 100px;
+    margin: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.box-padding {
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    background-color: yellow;
+
+}
+
+.box-content {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}

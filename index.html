@@ -8,6 +8,15 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+    <!-- Estilo incorporado usando id como seletor -->
+    <style type="text/css">
+        #bloco-3{
+            width:200px;
+            height: 200px;
+            background-color:red;
+        }
+        /* ids são referenciados com "#" antes do nome */
+    </style>
 </head>
 
 <body>
@@ -44,7 +53,7 @@
     <section>
         <div>
             <h3>Avaliações</h3>
-            <!-- O código abaixo exemplifica o uma das 3 formas de aplicar css a uma pagina web. Essa forma refere-se ao estilo inline. -->
+            <!-- O código abaixo exemplifica as 3 formas de aplicar css a uma pagina web. Essa forma refere-se ao estilo inline. -->
             <p>Este artigo contém <span style="color: blue; text-decoration: underline; font-size: 24px;">2</span>
                 avaliações</p>
             <p>Este artigo contém <span style="color: blue; text-decoration: underline; font-size: 24px;">2</span>
@@ -59,6 +68,33 @@
             <!-- Acima, temos um exemplo da importancia do atributo alt de uma imagem. Nela, descrevemos a imagem e essa descrição só
             ficaria disponível caso não seja possível exibir a imagem por algum motivo. Dessa forma, mesmo que o usuário não consiga ver
             o conteúdo, ele pode ter uma ideia do que teria de fato. -->
+        </div>
+    </section>
+    <section>
+        <!-- bloco 1 está sendo estilizado na folha de estilos main.css sendo referenciada pela classe -->
+        <div class="bloco-1">
+            <p>Estilo externo</p>
+        </div>
+        <div name="bloco-2" style="background-color: blue; width: 200px;height: 200px;" >
+            <p>Estilo inline</p>
+        </div>
+        <!-- bloco 2 está sendo estilizado dentro de um elemento head em um elemento style especifica para estilos -->
+
+        <div id="bloco-3">
+            <p>Estilo incorporado</p>
+        </div>
+    </section>
+
+    <!-- BOX MODEL -->
+    <section >
+        <div class="box-margin">
+            <div class="box-border">
+                <div class="box-padding">
+                    <div class="box-content">
+                        aqui
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </body>

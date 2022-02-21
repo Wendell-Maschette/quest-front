@@ -1,3 +1,10 @@
+// FUNCTION ADDSIX
+const fn = new Function('a', 'b', 'return a + b');
+
+var addSix = (param) => fn(6, param)
+
+console.log(addSix(10));
+
 
 // DUPLICANDO ARRAY
 var meuArray = [1, 2, 3, 4, 5,];
